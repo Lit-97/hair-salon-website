@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Hair Salon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Salon Luxe</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#stylists">Stylists</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Transform Your Look</h2>
+      <p>Style. Confidence. You.</p>
+      <a href="#contact" class="btn">Book an Appointment</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Salon Luxe, where beauty meets passion. We’re not just a salon — we’re a sanctuary of style, creativity, and self-expression.
+
+        Founded with a vision to redefine modern elegance, Salon Luxe brings together a team of highly trained stylists who are passionate about helping you look and feel your absolute best. Whether you're looking for a bold transformation or a subtle refresh, we tailor each experience to your unique personality, hair type, and lifestyle.
+        
+        We believe in quality over everything — from the products we use to the techniques we master. Our welcoming, inclusive space is designed to make you feel pampered, confident, and empowered the moment you walk in.
+        
+        Come in, unwind, and let us bring your dream look to life. Your hair journey starts here.
+        
+        </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Haircuts</h3>
+          <p>Trendy, classic, or bold — find your perfect cut.</p>
+        </div>
+        <div class="service-card">
+          <h3>Coloring</h3>
+          <p>From highlights to balayage, we’ve got your color.</p>
+        </div>
+        <div class="service-card">
+          <h3>Styling</h3>
+          <p>Blowouts, updos, and everything in between.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stylists Section -->
+  <section id="stylists" class="stylists">
+    <div class="container">
+      <h2>Meet the Team</h2>
+      <div class="stylist-grid">
+        <div class="stylist-card">
+          <img src="img/Stylist3.webp" alt="Stylist 1">
+          <h4>Alana Rivers</h4>
+          <p>Color Specialist</p>
+        </div>
+        <div class="stylist-card">
+          <img src="img/Stylist2.jpg" alt="Stylist 2">
+          <h4>Jay Torres</h4>
+          <p>Master Stylist</p>
+        </div>
+        <div class="stylist-card">
+          <img src="img/Stylist1.webp" alt="Stylist 3">
+          <h4>Riley Monroe</h4>
+          <p>Texture & Curl Expert</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Email us at <a href="mailto:hello@salonluxe.com">hello@salonluxe.com</a> or call (555) 123-4567</p>
+  
+      <!-- Contact Form -->
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+        </div>
+  
+        <button type="submit" class="btn">Submit</button>
+      </form>
+  
+      <!-- Confirmation Message (hidden initially) -->
+    <div id="confirmationMessage" style="display: none;">
+      <p>Thank you for contacting us! We'll get back to you shortly.</p>
+      <button onclick="closeConfirmation()">Close</button>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Salon Luxe. All rights reserved.</p>
+    </div>
+    <span class="hidden-signature">LIT</span> <!-- Moved outside container -->
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

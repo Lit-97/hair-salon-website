@@ -1,0 +1,378 @@
+/* Google Fonts */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+  opacity: 1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #f5f5f5;
+  padding: 1em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+nav a:hover {
+  color: #da4d6d;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../img/salon1.webp') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+  background: #da4d6d;
+  color: white;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+/* Sections */
+section {
+  padding: 4em 0;
+}
+
+.services .service-grid,
+.stylists .stylist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.service-card,
+.stylist-card {
+  flex: 1 1 250px;
+  padding: 1em;
+  background: #fafafa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stylist-card img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 1em;
+}
+
+/* Contact Section */
+.contact a {
+  color: #da4d6d;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: #fafafa;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact button {
+  background: #da4d6d;
+  color: white;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #d43d5d;
+}
+
+#confirmationMessage {
+  background-color: #f0f0f0;
+  padding: 2em;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-align: center;
+  color: #4CAF50;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+#confirmationMessage button {
+  background-color: #da4d6d;
+  color: white;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 1em;
+  border: none;
+}
+
+#confirmationMessage button:hover {
+  background-color: #d43d5d;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .services .service-grid,
+  .stylists .stylist-grid {
+    flex-direction: column;
+  }
+
+  .contact form {
+    padding: 1.5em;
+  }
+}
+
+/* Pricing Section Fixes */
+.pricing.faded-background {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.pricing .container {
+  padding: 4em 1em;
+}
+
+.faded-background {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url('../img/pricing.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+/* Pricing Table */
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.pricing-item {
+  background-color: #f9f9f9;
+  padding: 2em;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-item h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+/* Lookbook Gallery */
+.lookbook p {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.gallery img {
+  height: 200px;            /* Set a consistent height */
+  object-fit: cover;        /* Crop to fill the box without distortion */
+  width: 100%;              /* Makes sure it fills the grid item */
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.stylist-card img {
+  height: 150px;            /* Set a consistent height */
+  width: 150px;             /* Optional: to make it square */
+  object-fit: cover;        /* Ensures image is cropped to fill space */
+  border-radius: 50%;       /* Keeps the circular shape */
+  margin-bottom: 1em;
+}
+
+/* Lightbox popup */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-content {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.popup-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #da4d6d;
+}
+
+/*Hidden Sig*/
+footer {
+  position: relative; /* Needed for absolute positioning inside it */
+}
+
+.hidden-signature {
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+  font-size: 16px;
+  color: white;
+  user-select: none;
+  pointer-events: none;
+}

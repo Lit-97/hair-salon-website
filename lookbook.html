@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lookbook - Salon Luxe</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <script src="js/main.js" defer></script>
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">↑</button>
+
+  <header>
+    <div class="container">
+      <h1>Salon Luxe</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#stylists">Stylists</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="lookbook">
+    <div class="container">
+      <h2>Lookbook</h2>
+      <p>Our favorite transformations and styles.</p>
+      <div class="gallery">
+        <img src="img/lb1.jpeg" alt="Look 1" class="popup-img">
+        <img src="img/lb2.jpg" alt="Look 2" class="popup-img">
+        <img src="img/lb3.webp" alt="Look 3" class="popup-img">
+        <img src="img/lb4.webp" alt="Look 4" class="popup-img">
+        <img src="img/lb5.jfif" alt="Look 5" class="popup-img">
+        <img src="img/lb6.jpg" alt="Look 6" class="popup-img">
+        <img src="img/lb7.webp" alt="Look 7" class="popup-img">
+        <img src="img/lb8.jpg" alt="Look 8" class="popup-img">
+        <img src="img/lb9.png" alt="Look 9" class="popup-img">
+        <img src="img/lb10.jpg" alt="Look 10" class="popup-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup overlay -->
+  <div id="imgPopup" class="popup-overlay">
+    <span class="popup-close">&times;</span>
+    <img class="popup-content" id="popupImg">
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Salon Luxe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Image popup script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.popup-img');
+      const popup = document.getElementById('imgPopup');
+      const popupImg = document.getElementById('popupImg');
+      const closeBtn = document.querySelector('.popup-close');
+
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          popup.style.display = 'block';
+          popupImg.src = img.src;
+          popupImg.alt = img.alt;
+        });
+      });
+
+      closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+      });
+
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
