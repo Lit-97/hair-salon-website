@@ -32,7 +32,7 @@ Key features include:
 
 ### Screenshot
 
-![Screenshot of Salon Luxe](./public/scofsite.jpg)
+![Screenshot of Salon Luxe](./img/salonss.jpg)
 
 
 ### Links
