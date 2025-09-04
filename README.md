@@ -1,6 +1,6 @@
-# Salon Luxe – Next.js Project
+# Salon Luxe Website
 
-This project is a modern redesign of the Salon Luxe website, created to showcase my growth as a web developer. The original Salon Luxe site was my first website project. With this new version, I wanted to highlight my improved skills and create a fully interactive, visually appealing site.
+This project is the original Salon Luxe website, created as my first full website project. It showcases a luxury hair salon with a simple, elegant design and core functionality. This version demonstrates my early web development skills and focuses on a clean, responsive layout with essential features.
 
 ## Table of contents
 
@@ -14,22 +14,21 @@ This project is a modern redesign of the Salon Luxe website, created to showcase
 
 
 ## Overview
-Salon Luxe is a professional website for a luxury hair salon. I rebuilt this site to demonstrate my growth as a developer and to incorporate advanced features like authentication and an AI chatbot.
+The old Salon Luxe site is a professional, single-page website for a luxury hair salon. It was built to provide visitors with essential information about services, stylists, pricing, and contact options.
 
 Key features include:
 
-• Hero section with video background 🎥
+- Hero section with an eye-catching image 🌟
 
-• Google Sign-In Authentication 🔑
+- Services section highlighting haircuts, coloring, and styling ✂️
 
-• AI-powered Chatbot integration 🤖
+- Stylists section with images and specialties 🧑‍🎨
 
-• Booking forms 🗓️
+- Contact form with submission confirmation 📧
 
-• Product & service showcase pages
+- Back-to-top button for smooth navigation ⬆️
 
-• Animations and smooth transitions with Framer Motion
-
+- Responsive layout for desktop and mobile devices 📱
 
 ### Screenshot
 
@@ -38,56 +37,49 @@ Key features include:
 
 ### Links
 
-- New Site URL: [Salon Luxe (NEW)](https://salonluxelit.vercel.app/)
 - Old Site URL: [Salon Luxe (OLD)](https://lit-97.github.io/hair-salon-website/)
+- New Site URL: [Salon Luxe (NEW)](https://salonluxelit.vercel.app/)
 
 
 ## My process
-I started by planning the site structure and designing reusable components for pages like About, Contact, and Products. Then I:
+For this project, I focused on planning the structure of a one-page site and implementing a clean, functional layout. My process included:
 
-1. Set up a Next.js project with TypeScript.
+1. Planning the one-page layout with sections for hero, services, stylists, and contact.
 
-2. Built reusable React components for sections, cards, buttons, and forms.
+2. Writing semantic HTML for content organization.
 
-3. Integrated Firebase for authentication and data management.
+3. Styling the site with CSS, using Flexbox and Grid for layout.
 
-4. Added AI chatbot functionality for user interaction.
+4. Adding interactivity with vanilla JavaScript, including smooth scroll and contact form handling.
 
-5. Optimized images and video backgrounds for a polished visual experience.
+5. Optimizing images for fast loading and responsive display.
 
-6. Deployed the site to Vercel for production-ready hosting.
+6. Testing responsiveness across multiple devices.
 
 
 ### Built with
 
-- Next.js
+- HTML5
 
-- TypeScript
+- CSS3 (Flexbox & Grid)
 
-- CSS Modules & Framer Motion (animations)
+- JavaScript (Vanilla JS for interactivity)
 
-- Firebase (Authentication & Firestore)
+- Google Fonts (Playfair Display & Open Sans)
 
-- Vercel (Deployment & Hosting)
-
-- AI Chatbot integration 🤖
-
-- High-quality media assets (optimized images & video)
+- GitHub Pages (Hosting)
 
 ### Growth & Insights 🌱
 
-- Structuring a complex Next.js project with multiple pages and reusable components
+- Learned how to structure a single-page site with multiple sections.
 
-- Implementing Google Sign-In authentication with Firebase
+- Practiced responsive design for mobile-first layouts.
 
-- Integrating an AI-powered chatbot for real-time user engagement
+- Implemented basic interactivity using vanilla JavaScript (form handling, back-to-top button).
 
-- Optimizing video and image assets for web performance
+- Improved skills in image optimization and typography.
 
-- Using Framer Motion to enhance UI with animations and smooth transitions
-
-- Managing a production deployment on Vercel
-
+- Gained experience deploying a static website on GitHub Pages.
 
 ## Author
 
